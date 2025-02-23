@@ -36,7 +36,7 @@ const SubMenuItem = ({ label }) => (
 
 const Sidebar = () => {
   return (
-    <div className="w-1/4 min-h-screen bg-[#09090B] border-r border-zinc-800">
+    <div className="w-1/6 min-h-screen bg-[#09090B] border-r border-zinc-800">
       {/* User Welcome */}
       <div className="px-6 py-6 border-b border-zinc-800">
         <div className="text-[#FAFAFA] font-semibold">Bienvenue</div>
