@@ -4,7 +4,7 @@ import Sidebar from "./components/Home/Sidebar";
 import Main from "./components/Main/Main";
 import NotFound from "./pages/NotFound";
 import NotificationPage from "./pages/NotificationPage";
-
+import Account from "./pages/Account";
 function App() {
   return (
     <Router>
@@ -22,6 +22,7 @@ function App() {
             <Route path="/contact" element={<div>Contact Page</div>} />
             <Route path="/programs" element={<div>Programs Page</div>} />
             <Route path="/notifications" element={<NotificationPage />} />
+            <Route path="/account" element={<Account />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
