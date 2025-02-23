@@ -46,9 +46,9 @@ const Sidebar = () => {
       {/* Menu Items */}
       <div className="px-3 py-4 space-y-1">
         <MenuItem icon={User} label="Mon espace Étudiant">
-          <SubMenuItem label="Profile" />
-          <SubMenuItem label="Documents" />
-          <SubMenuItem label="Calendrier" />
+          <a href="/account"><SubMenuItem label="Profile" /></a>
+          <a href="/modules"><SubMenuItem label="Modules" /></a>
+          <a href="/calendar"><SubMenuItem label="Calendrier" /></a>
         </MenuItem>
 
         <MenuItem icon={LayoutDashboard} label="Dashboards">

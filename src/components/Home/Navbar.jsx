@@ -23,28 +23,28 @@ const Navbar = () => {
             </div>
 
             {/* Home */}
-            <button className="flex items-center gap-2 text-[#FAFAFA] hover:bg-zinc-800/70 px-4 py-2 rounded-lg transition-all duration-200">
+            <a href="/"><button className="flex items-center gap-2 text-[#FAFAFA] hover:bg-zinc-800/70 px-4 py-2 rounded-lg transition-all duration-200">
               <Home className="w-5 h-5" />
-              <span><a href="/">Home</a></span>
-            </button>
+              <span>Home</span>
+            </button></a>
           </div>
 
           {/* Right section */}
           <div className="flex items-center gap-2">
             {/* Notifications */}
-            <button className="relative flex items-center gap-2 text-[#FAFAFA] hover:bg-zinc-800/70 px-4 py-2 rounded-lg transition-all duration-200">
+            <a href="/notifications"><button className="relative flex items-center gap-2 text-[#FAFAFA] hover:bg-zinc-800/70 px-4 py-2 rounded-lg transition-all duration-200">
               <div className="relative">
                 <Bell className="w-5 h-5" />
                 <span className="absolute -top-1 -right-1 w-2 h-2 bg-red-500 rounded-full"></span>
               </div>
-              <span className="hidden sm:inline"><a href="/notifications">Notifications</a></span>
-            </button>
+              <span className="hidden sm:inline">Notifications</span>
+            </button></a>
 
             {/* Account */}
-            <button className="flex items-center gap-2 text-[#FAFAFA] hover:bg-zinc-800/70 px-4 py-2 rounded-lg transition-all duration-200">
+            <a href="/account"><button className="flex items-center gap-2 text-[#FAFAFA] hover:bg-zinc-800/70 px-4 py-2 rounded-lg transition-all duration-200">
               <User className="w-5 h-5" />
-              <a href="/account"><span className="hidden sm:inline">Account</span></a>
-            </button>
+              <span className="hidden sm:inline">Account</span>
+            </button></a>
 
             {/* Logout */}
             <button className="flex items-center gap-2 text-[#FAFAFA] hover:bg-red-950/60 px-4 py-2 rounded-lg transition-all duration-200 ml-2">

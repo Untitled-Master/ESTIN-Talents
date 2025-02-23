@@ -5,6 +5,9 @@ import Main from "./components/Main/Main";
 import NotFound from "./pages/NotFound";
 import NotificationPage from "./pages/NotificationPage";
 import Account from "./pages/Account";
+import Modules from "./pages/modules";
+import Calendar from "./pages/Calendrier";  
+
 function App() {
   return (
     <Router>
@@ -23,6 +26,8 @@ function App() {
             <Route path="/programs" element={<div>Programs Page</div>} />
             <Route path="/notifications" element={<NotificationPage />} />
             <Route path="/account" element={<Account />} />
+            <Route path="/modules" element={<Modules />} />
+            <Route path="/calendar" element={<Calendar />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
